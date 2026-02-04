@@ -22,6 +22,12 @@ jobs:
         with:
           submodules: true
           lfs: false
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+      - name: Build .NET Project
+        run: dotnet publish MyWebsiteTake2/MyWebsiteTake2.csproj -c Release -o MyWebsiteTake2/bin/Release/net8.0/publish
       - name: Install OIDC Client from Core Package
         run: npm install @actions/core@1.6.0 @actions/http-client
       - name: Get Id Token
