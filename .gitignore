@@ -1,0 +1,12 @@
+# Standard build outputs
+[Bb]in/
+[Oo]bj/
+# Stop tracking the assets file
+project.assets.json 
+
+# Other common .NET files to ignore
+.vs/
+.vscode/
+*.user
+*.suo
+*.njsproj
