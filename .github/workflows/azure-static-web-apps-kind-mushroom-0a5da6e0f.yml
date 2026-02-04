@@ -48,7 +48,7 @@ jobs:
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "/MyWebsiteTake2" # App source code path
           api_location: ""
-          output_location: "MyWebsiteTake2/bin/Release/net8.0/publish/wwwroot"
+          output_location: "publish/wwwroot"
           github_id_token: ${{ steps.idtoken.outputs.result }}
           ###### End of Repository/Build Configurations ######
 
